@@ -84,22 +84,3 @@ Follow these instructions to set up and run the project on your local machine.
 4.  The application will automatically upload the file and display status updates.
 5.  Once the analysis is complete, a detailed review report will appear on the dashboard.
 
----
-
-## 📁 Project Structure
-code-review-assistant/
-|
-|-- app.py             # Main Flask application
-|-- llm_analyzer.py    # Handles interaction with the Gemini API
-|-- requirements.txt   # Python dependencies
-|-- .env               # Stores the API key (must be created locally)
-|-- README.md          # Project documentation
-|
-|-- templates/
-|   |-- index.html     # Frontend dashboard
-|
-|-- static/
-|   |-- css/
-|   |   |-- style.css  # Styles for the dashboard
-|   |-- js/
-|       |-- script.js  # Frontend logic for uploads and display
