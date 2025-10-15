@@ -76,7 +76,7 @@ Follow these instructions to set up and run the project on your local machine.
 
 ---
 
-## 使い方 How to Use
+## How to Use
 
 1.  Open the web application in your browser.
 2.  Click the **"Select Code File"** button.
