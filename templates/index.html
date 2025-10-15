@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Code Review Assistant</h1>
+            <p>Upload a source code file to get an automated review powered by Gemini.</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <input type="file" id="fileInput" hidden>
+                <button id="uploadButton">Select Code File</button>
+                <span id="fileName">No file chosen</span>
+            </div>
+
+            <div id="loader" class="loader" style="display:none;"></div>
+
+            <div id="review-container" class="review-container" style="display:none;">
+                <h2>Review Report for <span id="reportFileName"></span></h2>
+                <div id="review-report" class="report-content"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
